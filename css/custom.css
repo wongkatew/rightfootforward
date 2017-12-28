@@ -10,7 +10,7 @@ and vh for viewport height */
 
 .coverpic {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
