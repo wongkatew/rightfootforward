@@ -5,6 +5,7 @@
 and vh for viewport height */
 .cover {
   padding-bottom: 5px;
+  max-height: 90vh;
 }
 
 .coverpic {
