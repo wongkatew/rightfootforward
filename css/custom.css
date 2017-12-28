@@ -1,10 +1,16 @@
 .navbar-brand {
   font-size: 30px;
 }
-/* Note for self: vw for relative font-sizing */
-
+/* Note for self: vw for relative sizing to viewport width
+and vh for viewport height */
 .cover {
-  max-width: 100%;
+  padding-bottom: 5px;
+}
+
+.coverpic {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .covertext {
