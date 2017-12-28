@@ -4,6 +4,7 @@
 /* Note for self: vw for relative sizing to viewport width
 and vh for viewport height */
 .cover {
+  position: relative;
   padding-bottom: 5px;
   max-height: 90vh;
 }
@@ -22,4 +23,19 @@ and vh for viewport height */
   max-width: 50vw;
   color: white;
   font-size: 50px;
+}
+
+.section-headings {
+  left: 4%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.heading-text {
+  color: #0e876f;
+  font-size: 24px;
+}
+
+.section-content {
+  left: 4%;
 }
