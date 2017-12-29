@@ -34,8 +34,13 @@ and vh for viewport height */
 .heading-text {
   color: #0e876f;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .section-content {
   left: 4%;
+}
+
+.section-content-text {
+  font-size: 20px;
 }
