@@ -1,5 +1,5 @@
 h1 {
-  color: #dedede;
+  color: white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -40,13 +40,24 @@ and vh for viewport height */
   z-index: -1;
 }
 
+#abovectext {
+  position: absolute;
+  bottom: 20%;
+  /* text-align: center; */
+  left: 5%;
+  width: 100vw;
+  color: grey;
+  font-size: 30px;
+  font-size: 3vh;
+}
+
 .covertext {
   position: absolute;
   bottom: 10%;
   /* text-align: center; */
   left: 5%;
   width: 100vw;
-  color: white;
+  color: grey;
   font-size: 50px;
   font-size: 5vh;
 }

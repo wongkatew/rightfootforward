@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Property of Kate Wong.-->
 <html lang="en">
 <head>
   <title>Kate Wong</title>
@@ -45,6 +45,7 @@
     <div class="row cover">
       <img class="coverpic" src="images/adjustedreachforinsects.png"></img>
       <img class="coverpicbehind" src="images/behindinsects.png"></img>
+      <p id="abovectext">Is there anything out there?</p>
       <p id="ctext" class="covertext">Searching</p>
     </div>
     <div class="row">
@@ -84,8 +85,12 @@ function adjustText() {
     text.innerHTML = "Searching . . .";
   }
   count = count + 1;
-  if (count === 10) {
+  if (count === 3) {
     text.innerHTML = "Aliens?"
+  }
+
+  if (count%100 === 0) {
+    text.innerHTML = "Still staring at the stars....";
   }
 
   if (count%64 === 0) {
