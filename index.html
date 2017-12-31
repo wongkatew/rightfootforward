@@ -84,5 +84,16 @@ function adjustText() {
     text.innerHTML = "Searching . . .";
   }
   count = count + 1;
+  if (count === 10) {
+    text.innerHTML = "Aliens?"
+  }
+
+  if (count%64 === 0) {
+    text.innerHTML = "Aliens?";
+  }
+
+  if (count%89 === 0) {
+    text.innerHTML = "Was that a spaceship?";
+  }
 }
 </script>
