@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 	<script src="js/exercises.js"></script>
 	<link href="css/custom.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="icon" href="images/mainlogo.png"/>
 </head>
 
@@ -41,5 +42,45 @@
       </ul>
     </div>
   </nav>
+  <div class="col">
+    <div class="row topphotocontainer">
+      <img class="topphoto" src="images/topbanner.png"></img>
+      <p class="topphototext">Art</p>
+    </div>
+
+    <div class="tz-gallery">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="images/admiringtheforest.png">
+            <img src="images/admiringtheforest.png" alt="Admiring the Forest"\>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="images/contemplatinglife.png">
+            <img src="images/contemplatinglife.png" alt="Contemplating Life"\>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="images/fallen_angel_xxtimekitty.png">
+            <img src="images/fallen_angel_xxtimekitty.png" alt="Fallen Angel"\>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="images/galacticwonder.png">
+            <img src="images/galacticwonder.png" alt="Galactic Wonder"\>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="images/gurl reaches for insects.png">
+            <img src="images/gurl reaches for insects.png" alt="Reaching for the Stars"\>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
 </body>
 </html>

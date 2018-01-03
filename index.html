@@ -77,42 +77,41 @@
       </div>
     </div>
   </div>
+  <script>
+  var count = 0;
+
+  $(document).ready(function() {
+    console.log('hello world');
+
+    setInterval(adjustText, 1000);
+  });
+
+  function adjustText() {
+    var text = document.getElementById("ctext");
+    if (count%3 === 0) {
+      text.innerHTML = "Searching .";
+    } else if (count%3 === 1) {
+      text.innerHTML = "Searching . .";
+    } else {
+      text.innerHTML = "Searching . . .";
+    }
+    count = count + 1;
+    if (count === 3) {
+      text.innerHTML = "Aliens?"
+    }
+
+    if (count%100 === 0) {
+      text.innerHTML = "Still staring at the stars....";
+    }
+
+    if (count%64 === 0) {
+      text.innerHTML = "Aliens?";
+    }
+
+    if (count%89 === 0) {
+      text.innerHTML = "Was that a spaceship?";
+    }
+  }
+  </script>
 </body>
 </html>
-
-<script>
-var count = 0;
-
-$(document).ready(function() {
-  console.log('hello world');
-
-  setInterval(adjustText, 1000);
-});
-
-function adjustText() {
-  var text = document.getElementById("ctext");
-  if (count%3 === 0) {
-    text.innerHTML = "Searching .";
-  } else if (count%3 === 1) {
-    text.innerHTML = "Searching . .";
-  } else {
-    text.innerHTML = "Searching . . .";
-  }
-  count = count + 1;
-  if (count === 3) {
-    text.innerHTML = "Aliens?"
-  }
-
-  if (count%100 === 0) {
-    text.innerHTML = "Still staring at the stars....";
-  }
-
-  if (count%64 === 0) {
-    text.innerHTML = "Aliens?";
-  }
-
-  if (count%89 === 0) {
-    text.innerHTML = "Was that a spaceship?";
-  }
-}
-</script>
