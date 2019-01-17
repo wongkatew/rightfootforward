@@ -206,6 +206,9 @@ and vh for viewport height */
     background-color: transparent !important;
 }
 
+.caption {
+  color: #cecece;
+}
 
 @media only screen and (max-width: 768px) {
   /* for mobile phones, cover photo should be only halfway */
@@ -243,7 +246,7 @@ and vh for viewport height */
     font-size: 12px;
   }
 
-.slideimg {
+  .slideimg {
     padding-top: 10vh;
   }
 
