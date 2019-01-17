@@ -20,17 +20,18 @@ and vh for viewport height */
 .cover {
   position: relative;
   padding: 5px;
-  max-height: 90vh;
-  max-width: 100vw;
+  height: 90vh;
+  width: 100vw;
   overflow: hidden;
 }
 
 .coverpic {
-  display: block;
-  max-width: 100vw;
+  /*display: block;
+  height: 90vh;
   width: auto;
-  height: auto;
-  bottom: 0%;
+  bottom: 0;*/
+  object-fit: cover;
+  width: 100vw;
 }
 
 .coverpicbehind {
@@ -46,25 +47,26 @@ and vh for viewport height */
 
 #abovectext {
   position: absolute;
-  bottom: 20%;
-  /* text-align: center; */
-  left: 5%;
-  width: 100vw;
-  color: grey;
-  font-size: 30px;
-  font-size: 3vh;
-}
-
-.covertext {
   position: absolute;
   bottom: 10%;
   /* text-align: center; */
   left: 5%;
   width: 100vw;
-  color: grey;
-  font-size: 50px;
-  font-size: 5vh;
+  color: white;
+  font-size: 3vh;
 }
+
+.covertext {
+  position: absolute;
+  bottom: 15%;
+  /* text-align: center; */
+  left: 5%;
+  width: 100vw;
+  color: white;
+  font-size: 10vh;
+  font-family: 'Lobster', cursive;
+}
+
 
 .topphotocontainer {
   position: relative;
@@ -107,7 +109,8 @@ and vh for viewport height */
 }
 
 .section-headings {
-  left: 4%;
+  /*left: 4%;*/
+  padding-left: 4vw;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -119,12 +122,59 @@ and vh for viewport height */
 }
 
 .section-content {
-  left: 4%;
+  padding-left: 4vw;
 }
 
 .section-content-text {
   font-size: 20px;
   color: #dedede;
+}
+
+.section-content-text-small {
+  font-size: 16px;
+  color: #dedede;
+}
+
+.project {
+  background-color: rgba(255,255,255,0.1);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#education {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sectionpic {
+  /*display: block;
+  height: 90vh;
+  width: auto;
+  bottom: 0;*/
+  position: relative;
+  object-fit: cover;
+  width: 90vw;
+  z-index: -1;
+}
+
+.blackbox {
+  background-color: rgba(0,0,0,0.5);
+  width: 60vw;
+  height: 40vh;
+  position: relative;
+  margin-top: -45vh;
+  margin-left: 25vw;
+  display: block;
+}
+
+.blackbox-text {
+  padding: 10px;
+  color: white;
 }
 
 
@@ -157,8 +207,9 @@ and vh for viewport height */
 
 @media only screen and (max-width: 768px) {
   /* for mobile phones, cover photo should be only halfway */
+  /*
   .cover {
-    max-height: 50vh;
+    max-height: 70vh;
   }
 
   .coverpic {
@@ -166,7 +217,7 @@ and vh for viewport height */
     height: 50vh;
     width: auto;
     bottom: 0;
-  }
+  }*/
 
   .coverpicbehind {
     position: absolute;
@@ -184,6 +235,14 @@ and vh for viewport height */
 
   .section-content-text {
     font-size: 16px;
+  }
+
+  .section-content-text-small {
+    font-size: 12px;
+  }
+
+.slideimg {
+    padding-top: 10vh;
   }
 
 }

@@ -10,107 +10,281 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
-	<script src="js/exercises.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 	<link href="css/custom.css" rel="stylesheet"/>
   <link rel="icon" href="images/mainlogo.png"/>
 </head>
 
 <body>
-  <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">
-    <img src="images/mainlogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-    Kate Wong
-  </a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">PROFILE <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="work.html">WORK</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="art.html">ART</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="thoughts.html">THOUGHTS</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
   <div class="col">
     <div class="row cover">
-      <img class="coverpic" src="images/adjustedreachforinsects.png"></img>
-      <img class="coverpicbehind" src="images/behindinsects.png"></img>
-      <p id="abovectext">Is there anything out there?</p>
-      <p id="ctext" class="covertext">Searching</p>
+      <img class="coverpic" src="images/DSC_0725.jpg"></img>
+      <!--img class="coverpicbehind" src="images/behindinsects.png"></img-->
+        <h1 id="ctext" class="covertext">I'm Kate.</h1>
+        <p id="abovectext">My favorite data structure is the stack.</p>
     </div>
     <div class="row">
       <div class="col section-headings">
-        <h1>Hello! I'm Kate, a design-y person.</h1>
-        <h2 class="heading-text">About</h2>
+        <h2 class="heading-text">$ whoami</h2>
       </div>
     </div>
     <div class="row">
+      <div class="col section-content">
+        <p class="section-content-text">I'm an undergraduate at University of California, San Diego studying Computer Science with a minor in Cognitive Science, and I'll be graduating June 2019. I have interests in software development, design, and visual arts. I'll be heading to Amazon full-time as a Software Development Engineer in Fall 2019. <br/><br/>I enjoy making things and having a good challenge.</p>
+        <p class="section-content-text">Connect with me through <a href="https://www.linkedin.com/in/katewwong">LinkedIn</a> or check out my <a href="docs/Kate Wong Resume F18.pdf" download>resume</a>.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col section-headings">
+        <h2 class="heading-text">$ cat work-experience.txt</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col section-content">
+        <p class="section-content-text"><b>Amazon Lab126</b><br/>Software Development Engineer Intern <br/>Sunnyvale | June 2018 - September 2018</p>
+        <p class="section-content-text-small">Worked on the Multi-Room Music feature for Alexa devices, which allows several Alexa-enabled devices to all play the same music at the same time.</p>
+        <p style="color:#dedede;">C++</p>
+        <p class="section-content-text"><b>County of Santa Clara</b><br/>Associate Developer <br/>San Jose | July 2017 - September 2017</p>
+        <p class="section-content-text-small">Developer for the Santa Clara County's Social Services Agency in the Department of Family and Children Services Application and Decisions support. Focused on the development of a web application intended to increase the efficiency of information flow and documentation by social workers at the Receiving Center.</p>
+        <p style="color:#dedede;">Java | AngularJS | MicrosoftSQL | AutoIt | SmartUX | Adobe Photoshop</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col section-headings">
+        <h2 class="heading-text">$ ./projectslist</h2>
+      </div>
+    </div>
+    <div class="row project">
+      <div class="col section-content">
+        <!--img src="images/f4.jpg" style="width:30vw; padding-top: 5px;"></img-->
+        <div class="slideshow-container" >
+          <div class="slideimg" id="dozeslides" style="padding-bottom: 5px;">
+            <img src="images/f4.jpg" style="width:100%"></img>
+          </div>
+        </div>
+      </div>
       <div class="col-7 section-content">
-        <p class="section-content-text">Currently, I am a student at the University of California, San Diego studying Computer Science with a minor in Cognitive Science, class of 2019. I have an interest in design, visual art, and software development. <br/><br/>This combination means that my favorite situation is when I get to figure out how to blend all three together into something human-centered and functional. <br/><br/>Essentially, I enjoy making things and having a good challenge.</p>
-        <p class="section-content-text">See some of my <a href="work.html">projects</a> or check out my <a href="https://www.linkedin.com/in/kate-wong-959075127">LinkedIn</a>.</p>
-      </div>
-      <div class="col">
-        <img src="images/profpic.png" height="250" width="250" style="margin-left: 60px;"></img>
+        <h3 style="color:white;">DOZE</h3>
+        <p class="section-content-text">UC San Diego | February 2017 - Present</p>
+        <p style="color:#dedede; font-size: 12px;">DOZE is an Android application to help individuals fall asleep faster at night.<br/><br/>Originally, DOZE was just an application concept and prototype for the UCSD Application Innovation Contest. The submission consisted of a pitch video and a basic Android framework with screenshots. Received 2nd place in the contest.<br/><br/>It is currently undergoing development, although slowly due to classes and personal responsibilities.</p>
+        <p style="color:#dedede;">Android Studio | Java | Wireframing | Prototyping | Adobe Premiere</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row project" style="margin-top: 10px;">
+      <div class="col section-content">
+        <!--img src="images/f4.jpg" style="width:30vw; padding-top: 5px;"></img-->
+        <div class="slideshow-container" >
+          <div class="slideimg" id="bacslides" style="padding-bottom: 5px;">
+            <img src="images/buildacat1.png" style="width:100%"></img>
+          </div>
+        </div>
+      </div>
+      <div class="col-7 section-content">
+        <h3 style="color:white;">Build-A-Cat</h3>
+        <p class="section-content-text">UC San Diego | April 2018 - June 2018</p>
+        <p style="color:#dedede; font-size: 12px;">Build-A-Cat is a web application designed to feed the cat obsession many of us have by trying to find the perfect cat based on your tastes. It scours the <a href="https://www.kaggle.com/crawford/cat-dataset">kaggle database of cat images</a> based on inputs you specify for your perfect cat.<br/><br/>This was a quarter-long project in a team of 4 for UCSD COGS 121, a course on HCI programming. I was primarily responsible for parsing the cat dataset, classifying colors of cats (which is really hard due to image processing times and our color perception != RGB).</p>
+        <p style="color:#dedede; font-size: 12px;"><a href="https://build-a-cat.herokuapp.com/">Deployed Application</a> | <a href="https://github.com/kjan95129/build-a-cat">GitHub</a></p>
+        <p style="color:#dedede;">Wireframing | JavaScript | HTML | CSS | Python | Jupyter Notebook</p>
+      </div>
+    </div>
+    <div class="row project" style="margin-top: 10px;">
+      <div class="col section-content">
+        <!--img src="images/f4.jpg" style="width:30vw; padding-top: 5px;"></img-->
+        <div class="slideshow-container" >
+          <div class="slideimg" style="padding-bottom: 5px;">
+            <img src="images/dsep.png" style="width:100%"></img>
+          </div>
+        </div>
+      </div>
+      <div class="col-7 section-content">
+        <h3 style="color:white;">Conditional Independence and D-Separation in Bayes Nets Exploration</h3>
+        <p class="section-content-text">UC San Diego | November 2018 - December 2018</p>
+        <p style="color:#dedede; font-size: 12px;">This is a learning tool that lets students explore the relationships in conditional independence and d-separation in Bayes Nets by examining different graphs and nodes. The user selects nodes in a Bayes Net that will be checked for whether or not they are conditionally independent and why or why not. We also provide practice problems that allow the user to test their knowledge by submitting answers and seeing whether or not their reasoning makes sense.<br/><br/>This was a three-week project in a team of 2 for UCSD CSE 150: Introduction to AI, Probabilistic Reasoning and Decision Making.</p>
+        <p style="color:#dedede; font-size: 12px;"><a href="https://wongkatew.github.io/dseparation/">Deployed Application</a> | <a href="https://github.com/wongkatew/dseparation">GitHub</a></p>
+        <p style="color:#dedede;">JavaScript | HTML | CSS</p>
+      </div>
+    </div>
+    <!--div class="row">
+      <div class="col section-content" id="education">
+        <img class="sectionpic" src="images/DSC_0037.jpg"></img>
+        <div class="blackbox">
+          <p class="blackbox-text"> hello </p>
+        </div>
+      </div>
+    </div-->
+    <!--div class="row">
       <div class="col section-headings">
         <h2 class="heading-text">Contact</h2>
       </div>
     </div>
     <div class="row">
       <div class="col section-content">
-        <p class="section-content-text">Want to get in touch?</p>
-        <p class="section-content-text"><img src="images/mailicon.png" height="30" width="40" /> <a href="mailto:wongkatew@gmail.com">wongkatew@gmail.com</a></p>
-        <p class="section-content-text">Milpitas, CA | San Diego, CA</p>
-        <p class="section-content-text"><a href="docs/Kate Wong Resume W18.pdf" download>Download Resume</a></p>
+        <p class="section-content-text" style="font-size:12px;">Want to get in touch?</p>
+        <p class="section-content-text" style="font-size: 12px;"><img src="images/mailicon.png" height="30" width="40" /> <a href="mailto:wongkatew@gmail.com">wongkatew@gmail.com</a></p>
+        <a href="https://www.linkedin.com/in/katewwong">LinkedIn</a>
+      </div>
+    </div-->
+    <div class="row">
+      <div class="col section-headings">
+        <h1 style="font-family: 'Lobster', cursive;">the color in my life</h1>
+        <p style="color:#dedede;">what gives sanity to my computer science brain</p>
       </div>
     </div>
   </div>
+  <div class="tz-gallery">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/admiringtheforest.png">
+            <img src="images/admiringtheforest.png" alt="Admiring the Forest">
+          </a>
+          <div class="caption">
+            <h3>Admiring the Forest</h3>
+              <p>October 2015</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/galacticwonder.png">
+            <img src="images/galacticwonder.png" alt="Galactic Wonder">
+          </a>
+          <div class="caption">
+            <h3>Galactic Wonder</h3>
+              <p>December 2014</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/contemplatinglife.png">
+            <img src="images/contemplatinglife.png" alt="Contemplating Life">
+          </a>
+          <div class="caption">
+            <h3>Contemplating Life</h3>
+              <p>April 2017</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/fallen_angel_xxtimekitty.png">
+            <img src="images/fallen_angel_xxtimekitty.png" alt="Fallen Angel">
+          </a>
+          <div class="caption">
+            <h3>Fallen Angel</h3>
+              <p>July 2013</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/gurl reaches for insects.png">
+            <img src="images/gurl reaches for insects.png" alt="Reaching for the Stars">
+          </a>
+          <div class="caption">
+            <h3>Reaching for the Stars</h3>
+              <p>April 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="row">
+      <div class="col section-headings">
+        <h1 style="font-family: 'Lobster', cursive;">what I see in life</h1>
+        <p style="color:#dedede;">what inputs enter my computer science brain</p>
+      </div>
+    </div>
+  </div>
+  <div class="tz-gallery">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography1.jpg">
+            <img src="images/photography1.jpg" alt="Christina and Heero">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography2.jpg">
+            <img src="images/photography2.jpg" alt="La Jolla Sunsets">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography3.jpg">
+            <img src="images/photography3.jpg" alt="Birds and sunsets">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography4.jpg">
+            <img src="images/photography4.jpg" alt="Space Needle">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography5.jpg">
+            <img src="images/photography5.jpg" alt="Seattle">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <a class="lightbox" href="images/photography6.jpg">
+            <img src="images/photography6.jpg" alt="Edward">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+  baguetteBox.run('.tz-gallery');
+</script>
   <script>
   var count = 0;
 
   $(document).ready(function() {
     console.log('hello world');
 
-    setInterval(adjustText, 1000);
+    setInterval(changeSlide, 5000);
   });
 
-  function adjustText() {
-    var text = document.getElementById("ctext");
-    if (count%3 === 0) {
-      text.innerHTML = "Searching .";
-    } else if (count%3 === 1) {
-      text.innerHTML = "Searching . .";
+
+
+  function changeSlide() {
+    var doze = document.getElementById("dozeslides");
+    var bac = document.getElementById("bacslides");
+    if (count%4 === 0) {
+      doze.innerHTML = "<img src=\"images/f4.jpg\" style=\"width:100%\"></img>";
+    } else if (count%4 === 1) {
+      doze.innerHTML = "<img src=\"images/f54.jpg\" style=\"width:100%\"></img>";
+    } else if (count%4 === 2) {
+      doze.innerHTML = "<img src=\"images/f55.jpg\" style=\"width:100%\"></img>"
     } else {
-      text.innerHTML = "Searching . . .";
+      doze.innerHTML = "<img src=\"images/f56.jpg\" style=\"width:100%\"></img>";
     }
+
+    if (count%3 === 0) {
+      bac.innerHTML = "<img src=\"images/buildacat1.png\" style=\"width:100%\"></img>"
+    } else if (count%3 === 1) {
+      bac.innerHTML = "<img src=\"images/buildacat2.png\" style=\"width:100%\"></img>"
+    } else {
+      bac.innerHTML = "<img src=\"images/buildacat3.png\" style=\"width:100%\"></img>"
+    }
+
     count = count + 1;
-    if (count === 3) {
-      text.innerHTML = "Aliens?"
-    }
-
-    if (count%100 === 0) {
-      text.innerHTML = "Still staring at the stars....";
-    }
-
-    if (count%64 === 0) {
-      text.innerHTML = "Aliens?";
-    }
-
-    if (count%89 === 0) {
-      text.innerHTML = "Was that a spaceship?";
-    }
   }
   </script>
 </body>
